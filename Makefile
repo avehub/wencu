@@ -22,7 +22,7 @@ api:
 	protoc --proto_path=. \
 		--proto_path=./third_party \
 		--proto_path=./api \
-		--gogofaster_out="plugins=grpc,paths=source_relative:." \
+		--gogofaster_out="plugins=grpc,paths=source_relative:/root/go/bin" \
 		--grpc-gateway_out="paths=source_relative:." \
 		$(API_PROTO_FILES)
 

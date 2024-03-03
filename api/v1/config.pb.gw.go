@@ -15,6 +15,7 @@ import (
 
 	"github.com/golang/protobuf/descriptor"
 	"github.com/golang/protobuf/proto"
+	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/grpc-ecosystem/grpc-gateway/utilities"
 	"google.golang.org/grpc"
@@ -22,7 +23,6 @@ import (
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
-	"google.golang.org/protobuf/types/known/emptypb"
 )
 
 // Suppress "imported and not used" errors
@@ -35,7 +35,7 @@ var _ = descriptor.ForMessage
 var _ = metadata.Join
 
 func request_ConfigAPI_GetSettings_0(ctx context.Context, marshaler runtime.Marshaler, client ConfigAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.GetSettings(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -44,7 +44,7 @@ func request_ConfigAPI_GetSettings_0(ctx context.Context, marshaler runtime.Mars
 }
 
 func local_request_ConfigAPI_GetSettings_0(ctx context.Context, marshaler runtime.Marshaler, server ConfigAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.GetSettings(ctx, &protoReq)
@@ -123,7 +123,7 @@ func local_request_ConfigAPI_ListConfig_0(ctx context.Context, marshaler runtime
 }
 
 func request_ConfigAPI_GetStats_0(ctx context.Context, marshaler runtime.Marshaler, client ConfigAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.GetStats(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -132,7 +132,7 @@ func request_ConfigAPI_GetStats_0(ctx context.Context, marshaler runtime.Marshal
 }
 
 func local_request_ConfigAPI_GetStats_0(ctx context.Context, marshaler runtime.Marshaler, server ConfigAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.GetStats(ctx, &protoReq)
@@ -141,7 +141,7 @@ func local_request_ConfigAPI_GetStats_0(ctx context.Context, marshaler runtime.M
 }
 
 func request_ConfigAPI_GetEnvs_0(ctx context.Context, marshaler runtime.Marshaler, client ConfigAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.GetEnvs(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -150,7 +150,7 @@ func request_ConfigAPI_GetEnvs_0(ctx context.Context, marshaler runtime.Marshale
 }
 
 func local_request_ConfigAPI_GetEnvs_0(ctx context.Context, marshaler runtime.Marshaler, server ConfigAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.GetEnvs(ctx, &protoReq)
@@ -159,7 +159,7 @@ func local_request_ConfigAPI_GetEnvs_0(ctx context.Context, marshaler runtime.Ma
 }
 
 func request_ConfigAPI_UpdateSitemap_0(ctx context.Context, marshaler runtime.Marshaler, client ConfigAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.UpdateSitemap(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -168,7 +168,7 @@ func request_ConfigAPI_UpdateSitemap_0(ctx context.Context, marshaler runtime.Ma
 }
 
 func local_request_ConfigAPI_UpdateSitemap_0(ctx context.Context, marshaler runtime.Marshaler, server ConfigAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.UpdateSitemap(ctx, &protoReq)
@@ -177,7 +177,7 @@ func local_request_ConfigAPI_UpdateSitemap_0(ctx context.Context, marshaler runt
 }
 
 func request_ConfigAPI_GetDeviceInfo_0(ctx context.Context, marshaler runtime.Marshaler, client ConfigAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.GetDeviceInfo(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -186,7 +186,7 @@ func request_ConfigAPI_GetDeviceInfo_0(ctx context.Context, marshaler runtime.Ma
 }
 
 func local_request_ConfigAPI_GetDeviceInfo_0(ctx context.Context, marshaler runtime.Marshaler, server ConfigAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.GetDeviceInfo(ctx, &protoReq)

@@ -15,6 +15,7 @@ import (
 
 	"github.com/golang/protobuf/descriptor"
 	"github.com/golang/protobuf/proto"
+	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/grpc-ecosystem/grpc-gateway/utilities"
 	"google.golang.org/grpc"
@@ -22,7 +23,6 @@ import (
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
-	"google.golang.org/protobuf/types/known/emptypb"
 )
 
 // Suppress "imported and not used" errors
@@ -103,7 +103,7 @@ func local_request_UserAPI_Login_0(ctx context.Context, marshaler runtime.Marsha
 }
 
 func request_UserAPI_Logout_0(ctx context.Context, marshaler runtime.Marshaler, client UserAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.Logout(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -112,7 +112,7 @@ func request_UserAPI_Logout_0(ctx context.Context, marshaler runtime.Marshaler, 
 }
 
 func local_request_UserAPI_Logout_0(ctx context.Context, marshaler runtime.Marshaler, server UserAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.Logout(ctx, &protoReq)
@@ -401,7 +401,7 @@ func local_request_UserAPI_GetUserCaptcha_0(ctx context.Context, marshaler runti
 }
 
 func request_UserAPI_GetUserPermissions_0(ctx context.Context, marshaler runtime.Marshaler, client UserAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.GetUserPermissions(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -410,7 +410,7 @@ func request_UserAPI_GetUserPermissions_0(ctx context.Context, marshaler runtime
 }
 
 func local_request_UserAPI_GetUserPermissions_0(ctx context.Context, marshaler runtime.Marshaler, server UserAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.GetUserPermissions(ctx, &protoReq)
@@ -419,7 +419,7 @@ func local_request_UserAPI_GetUserPermissions_0(ctx context.Context, marshaler r
 }
 
 func request_UserAPI_CanIUploadDocument_0(ctx context.Context, marshaler runtime.Marshaler, client UserAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.CanIUploadDocument(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -428,7 +428,7 @@ func request_UserAPI_CanIUploadDocument_0(ctx context.Context, marshaler runtime
 }
 
 func local_request_UserAPI_CanIUploadDocument_0(ctx context.Context, marshaler runtime.Marshaler, server UserAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.CanIUploadDocument(ctx, &protoReq)
@@ -473,7 +473,7 @@ func local_request_UserAPI_ListUserDynamic_0(ctx context.Context, marshaler runt
 }
 
 func request_UserAPI_SignToday_0(ctx context.Context, marshaler runtime.Marshaler, client UserAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.SignToday(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -482,7 +482,7 @@ func request_UserAPI_SignToday_0(ctx context.Context, marshaler runtime.Marshale
 }
 
 func local_request_UserAPI_SignToday_0(ctx context.Context, marshaler runtime.Marshaler, server UserAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.SignToday(ctx, &protoReq)
@@ -491,7 +491,7 @@ func local_request_UserAPI_SignToday_0(ctx context.Context, marshaler runtime.Ma
 }
 
 func request_UserAPI_GetSignedToday_0(ctx context.Context, marshaler runtime.Marshaler, client UserAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.GetSignedToday(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -500,7 +500,7 @@ func request_UserAPI_GetSignedToday_0(ctx context.Context, marshaler runtime.Mar
 }
 
 func local_request_UserAPI_GetSignedToday_0(ctx context.Context, marshaler runtime.Marshaler, server UserAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.GetSignedToday(ctx, &protoReq)

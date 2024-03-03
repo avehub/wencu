@@ -15,6 +15,7 @@ import (
 
 	"github.com/golang/protobuf/descriptor"
 	"github.com/golang/protobuf/proto"
+	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/grpc-ecosystem/grpc-gateway/utilities"
 	"google.golang.org/grpc"
@@ -22,7 +23,6 @@ import (
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
-	"google.golang.org/protobuf/types/known/emptypb"
 )
 
 // Suppress "imported and not used" errors
@@ -459,7 +459,7 @@ func local_request_DocumentAPI_GetDocumentScore_0(ctx context.Context, marshaler
 }
 
 func request_DocumentAPI_SetDocumentReconvert_0(ctx context.Context, marshaler runtime.Marshaler, client DocumentAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.SetDocumentReconvert(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -468,7 +468,7 @@ func request_DocumentAPI_SetDocumentReconvert_0(ctx context.Context, marshaler r
 }
 
 func local_request_DocumentAPI_SetDocumentReconvert_0(ctx context.Context, marshaler runtime.Marshaler, server DocumentAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.SetDocumentReconvert(ctx, &protoReq)
@@ -617,7 +617,7 @@ func local_request_RecycleAPI_DeleteRecycleDocument_0(ctx context.Context, marsh
 }
 
 func request_RecycleAPI_ClearRecycleDocument_0(ctx context.Context, marshaler runtime.Marshaler, client RecycleAPIClient, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := client.ClearRecycleDocument(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))
@@ -626,7 +626,7 @@ func request_RecycleAPI_ClearRecycleDocument_0(ctx context.Context, marshaler ru
 }
 
 func local_request_RecycleAPI_ClearRecycleDocument_0(ctx context.Context, marshaler runtime.Marshaler, server RecycleAPIServer, req *http.Request, pathParams map[string]string) (proto.Message, runtime.ServerMetadata, error) {
-	var protoReq emptypb.Empty
+	var protoReq empty.Empty
 	var metadata runtime.ServerMetadata
 
 	msg, err := server.ClearRecycleDocument(ctx, &protoReq)
