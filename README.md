@@ -1,4 +1,4 @@
-![文促](web/static/static/images/logo.png)
+![文促](./logo.png)
 
 目录
 
